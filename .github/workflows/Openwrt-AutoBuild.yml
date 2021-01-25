@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: LEDE-From-Lienol
+name: LEDE-From-Lean
 
 on: 
   #push:
