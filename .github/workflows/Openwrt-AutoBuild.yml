@@ -98,7 +98,7 @@ jobs:
       id: date
       run: |
         echo "date=$(date +'%m/%d_%Y_%H/%M')" >> $GITHUB_ENV
-        echo "date2=$(date +'%m/%d %Y')" >> $GITHUB_ENV
+        echo "date2=$(date +'%m/%d_%Y')" >> $GITHUB_ENV
         echo "date3=$(date +'%m.%d')" >> $GITHUB_ENV
         echo "date4=$(date +'%m.%d.%Y')" >> $GITHUB_ENV
 
@@ -406,7 +406,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       with:
         files: "${{ env.FIRMWARE }}/*"
-        name: ${{ env.date2 }}-Gogros-${{matrix.target}} ${{ env.EMOJI }}
+        name: ${{ env.date2 }}-Godros-${{matrix.target}} ${{ env.EMOJI }}
         tag_name: ${{ env.date }}_${{matrix.target}}
         body_path: release.txt
 
@@ -415,7 +415,7 @@ jobs:
       continue-on-error: true
       if: env.UPLOAD_FIRMWARE_FOR_ARTIFACT == 'true'
       with:
-        name: ${{ env.date3 }} ${{matrix.target}}
+        name: ${{ env.date3 }}-Godros-${{matrix.target}}
         path: ${{ env.FIRMWARE }}
         
     - name: WeChat notification
