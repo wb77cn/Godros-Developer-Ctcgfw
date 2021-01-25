@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Godros-1907-From-Lienol
+name: LEDE-From-Lienol
 
 on: 
   #push:
@@ -340,7 +340,7 @@ jobs:
         
         echo ${{ env.date4 }} > version.txt
         mv sha256sums ${{matrix.target}}_sha256sums
-        #rename -v "s/^openwrt/${{ env.date3 }}-GodROS/" *
+        #rename -v "s/^openwrt/${{ env.date3 }}-LEDE/" *
         #rename -v "s/xiaomi_redmi-router/redmi/" *bin
         #rename -v "s/-d-team//" *bin
         #rename -v "s/friendlyarm_nanopi-r2s/nanopi-r2s/" *gz
@@ -406,7 +406,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       with:
         files: "${{ env.FIRMWARE }}/*"
-        name: ${{ env.date2 }}-Godros-${{matrix.target}} ${{ env.EMOJI }}
+        name: ${{ env.date2 }}-LEDE-${{matrix.target}} ${{ env.EMOJI }}
         tag_name: ${{ env.date }}_${{matrix.target}}
         body_path: release.txt
 
@@ -415,7 +415,7 @@ jobs:
       continue-on-error: true
       if: env.UPLOAD_FIRMWARE_FOR_ARTIFACT == 'true'
       with:
-        name: ${{ env.date3 }}-Godros-${{matrix.target}}
+        name: ${{ env.date3 }}-LEDE-${{matrix.target}}
         path: ${{ env.FIRMWARE }}
         
     - name: WeChat notification
