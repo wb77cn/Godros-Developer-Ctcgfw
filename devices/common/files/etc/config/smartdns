@@ -3,7 +3,7 @@ config smartdns
 	option serve_expired '1'
 	option coredump '0'
 	option port '6053'
-	option seconddns_port '7913'
+	option seconddns_port '5335'
 	option seconddns_enabled '1'
 	option seconddns_no_rule_addr '0'
 	option seconddns_no_rule_nameserver '0'
