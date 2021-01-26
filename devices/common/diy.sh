@@ -37,7 +37,7 @@ git clone https://github.com/Lienol/openwrt-OpenAppFilter.git package/diy/OpenAp
 #git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
 git clone https://github.com/fw876/helloworld.git package/diy/luci-app-ssr-plus
 #git clone https://github.com/docker/docker-ce.git package/diy/luci-app-docker-ce
-svn co https://github.com/godros/openwrt-app/luci-app-jd-dailybonus/branches/luci19  package/diy/luci-app-jd-dailybonus  #京东签到
+svn co https://github.com/god-os/openwrt-app/luci-app-jd-dailybonus/branches/luci19  package/diy/luci-app-jd-dailybonus  #京东签到
 #git clone https://github.com/tohojo/sqm-scripts.git package/diy/sqm-scripts
 #git clone  https://github.com/siwind/luci-app-ttyd.git package/diy/luci-app-ttyd
 svn co https://github.com/god-os/openwrt-app/trunk/luci-app-control-webrestriction package/luci-app-control-webrestriction
