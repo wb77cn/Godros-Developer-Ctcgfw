@@ -12,8 +12,6 @@ fi
 
 touch /etc/config/placeholder
 
-uci set luci.main.mediaurlbase=/luci-static/argon
-uci commit luci
 
 #sed -i '$a src/gz openwrt_packages2 https://op.supes.top/19.07.5/packages/x86_64/packages' /etc/opkg/distfeeds.conf
 #sed -i '$a src/gz openwrt_base2 https://op.supes.top/19.07.5/packages/x86_64/base' /etc/opkg/distfeeds.conf
