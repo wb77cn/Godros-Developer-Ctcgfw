@@ -1,7 +1,7 @@
 config samba
-	option 'name'			'LEDE'
+	option 'name'			'GodROS'
 	option 'workgroup'		'WORKGROUP'
-	option 'description'		'LEDE'
+	option 'description'		'GodROS'
 	option 'homes'			'1'
 
 
