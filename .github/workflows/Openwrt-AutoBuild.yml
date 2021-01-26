@@ -268,7 +268,8 @@ jobs:
         find openwrt/bin/packages/*/*  -name "*softethervpn*" | xargs -i mv -f {} ./firmware/
         find openwrt/bin/packages/*/*  -name "*syncdial*" | xargs -i mv -f {} ./firmware/
         find openwrt/bin/packages/*/*  -name "*transmission*" | xargs -i mv -f {} ./firmware/
-        find openwrt/bin/packages/*/*  -name "*trojan-server*" | xargs -i mv -f {} ./firmware/
+         find openwrt/bin/packages/*/*  -name "*ttnode*" | xargs -i mv -f {} ./firmware/
+        find openwrt/bin/packages/*/*  -name "*uugame*" | xargs -i mv -f {} ./firmware/ 
         find openwrt/bin/packages/*/*  -name "*udpxy*" | xargs -i mv -f {} ./firmware/
         find openwrt/bin/packages/*/*  -name "*unblockmusic*" | xargs -i mv -f {} ./firmware/
         find openwrt/bin/packages/*/*  -name "*usb-printer*" | xargs -i mv -f {} ./firmware/
@@ -324,6 +325,8 @@ jobs:
         zip -r luci-app-syncdial.zip *syncdial* || true
         zip -r luci-app-transmission.zip *transmission* || true
         zip -r luci-app-trojan-server.zip *trojan-server* || true
+        zip -r luci-app-ttnode.zip *ttnode* || true	
+        zip -r luci-app-uugamebooster.zip *uugame* || true	
         zip -r luci-app-udpxy.zip *udpxy* || true		
         zip -r luci-app-unblockmusic.zip *unblockmusic* || true
         zip -r luci-app-usb-printer.zip *usb-printer* || true
