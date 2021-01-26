@@ -29,8 +29,8 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git  package/diy
 sed -i '/resolvfile=/d' package/diy/luci-app-adguardhome/root/etc/init.d/AdGuardHome
 sed -i 's/DEPENDS:=/DEPENDS:=+AdGuardHome /g' package/diy/luci-app-adguardhome/Makefile
 #argon主题
-#svn co https://github.com/god-os/openwrt-app/trunk/luci-theme-argon package/diy/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/diy/luci-theme-argon
+svn co https://github.com/god-os/openwrt-app/branches/luci18/luci-theme-argon package/diy/luci-theme-argon
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/diy/luci-theme-argon
 svn co https://github.com/god-os/openwrt-app/trunk/luci-app-eqos package/diy/luci-app-eqos
 svn co https://github.com/god-os/openwrt-app/trunk/luci-app-godproxy package/diy/luci-app-godproxy
 svn co https://github.com/god-os/openwrt-app/trunk/luci-app-serverchan package/diy/luci-app-serverchan
