@@ -8,6 +8,8 @@ if [ ! -f /etc/config/placeholder ]; then
 uci set snmpd.general.enabled="0"
 uci commit snmpd
 
+uci set luci.main.mediaurlbase=/luci-static/argon
+uci commit system
 fi
 
 touch /etc/config/placeholder
