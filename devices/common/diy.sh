@@ -45,8 +45,11 @@ git clone https://github.com/awesome-openwrt/luci-app-control-mia package/luci-a
 
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/diy/luci-app-dnsfilter
 
-#cd package
-#svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
+svn co https://github.com/godros/openwrt-app/trunk/luci-app-uugamebooster package/diy/luci-app-uugamebooster
+svn co https://github.com/godros/openwrt-app/trunk/luci-app-ttnode package/diy/luci-app-ttnode
+
+#cd package克隆passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy/
 #cd -
 ./scripts/feeds update -a
 ./scripts/feeds install -a
