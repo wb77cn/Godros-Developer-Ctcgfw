@@ -47,8 +47,8 @@ svn co https://github.com/godros/openwrt-app/luci-app-timecontrol/branches/luci1
 git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-smartdns
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/diy/luci-app-dnsfilter
 svn co https://github.com/GodROS/openwrt-1907-package/trunk/trojan-go package/trojan-go
-#svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
-#svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
+svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
+svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
 
 svn co https://github.com/godros/openwrt-app/luci-app-uugamebooster/branches/luci19 package/diy/luci-app-uugamebooster
 svn co https://github.com/godros/openwrt-app/luci-app-ttnode/branches/luci19 package/diy/luci-app-ttnode
