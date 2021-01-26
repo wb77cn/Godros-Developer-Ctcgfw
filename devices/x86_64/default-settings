@@ -9,7 +9,7 @@ uci set snmpd.general.enabled="0"
 uci commit snmpd
 
 uci set luci.main.mediaurlbase=/luci-static/argon
-uci commit system
+uci commit luci
 fi
 
 touch /etc/config/placeholder
