@@ -60,5 +60,5 @@ svn co https://github.com/god-os/openwrt-app/trunk/luci-app-ttnod package/diy/lu
 
 # 内核显示增加自己个性名称
 date=`date +%m.%d.%Y`
-sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LedeOS Stan @%C From Lean OpenWrt %V'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='GodROS D%C From Lean OpenWrt %V'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/# REVISION:=x/REVISION:= $date/g" include/version.mk
