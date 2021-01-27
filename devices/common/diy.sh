@@ -31,9 +31,9 @@ sed -i 's/DEPENDS:=/DEPENDS:=+AdGuardHome /g' package/diy/luci-app-adguardhome/M
 #argon主题
 svn co https://github.com/godros/openwrt-app/branches/luci18/luci-theme-argon package/diy/luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/diy/luci-theme-argon
-svn co https://github.com/godros/openwrt-app/trunk/luci-app-eqos package/diy/luci-app-eqos
-svn co https://github.com/godros/openwrt-app/trunk/luci-app-igodproxy package/diy/luci-app-godproxy
-svn co https://github.com/god-os/openwrt-app/trunk/luci-app-serverchan package/diy/luci-app-serverchan
+svn co https://github.com/godros/openwrt-app/branches/luci19/luci-app-eqos package/diy/luci-app-eqos
+svn co https://github.com/godros/openwrt-app/branches/luci19/luci-app-godproxy package/diy/luci-app-godproxy
+svn co https://github.com/god-os/openwrt-app/branches/luci19/luci-app-serverchan package/diy/luci-app-serverchan
 git clone https://github.com/Lienol/openwrt-OpenAppFilter.git package/diy/OpenAppFilter
 #git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
 git clone https://github.com/fw876/helloworld.git package/diy/luci-app-ssr-plus
@@ -41,10 +41,10 @@ git clone https://github.com/fw876/helloworld.git package/diy/luci-app-ssr-plus
 svn co https://github.com/god-os/openwrt-app/luci-app-jd-dailybonus/branches/luci19  package/diy/luci-app-jd-dailybonus  #京东签到
 #git clone https://github.com/tohojo/sqm-scripts.git package/diy/sqm-scripts
 #git clone  https://github.com/siwind/luci-app-ttyd.git package/diy/luci-app-ttyd
-svn co https://github.com/godros/openwrt-app/trunk/luci-app-control-webrestriction package/luci-app-control-webrestriction
-svn co https://github.com/godros/openwrt-app/trunk/luci-app-control-timewol package/luci-app-control-timewol
-svn co https://github.com/godros/openwrt-app/trunk//luci-app-control-weburl package/luci-app-control-weburl
-svn co https://github.com/godros/openwrt-app/trunk/luci-app-timecontrol package/luci-app-timecontrol
+svn co https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-webrestriction package/luci-app-control-webrestriction
+svn co https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-timewol package/luci-app-control-timewol
+svn co https://github.com/godros/openwrt-app/branches/luci19//luci-app-control-weburl package/luci-app-control-weburl
+svn co https://github.com/godros/openwrt-app/branches/luci19/luci-app-timecontrol package/luci-app-timecontrol
 git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-smartdns
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/diy/luci-app-dnsfilter
 #svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
