@@ -154,7 +154,7 @@ jobs:
         /bin/bash "devices/${{matrix.target}}/$DIY_SH"
         )
         fi
-        mv devices/${{matrix.target}}/$CONFIG_FILE .config
+        #mv devices/${{matrix.target}}/$CONFIG_FILE .config
         #if [ -f "devices/common/$CONFIG_FILE" ]; then
           #echo >> .config
           #cat devices/common}/$CONFIG_FILE >> .config
