@@ -20,7 +20,7 @@ ln -sf /sbin/ip /usr/bin/ip
 
 uci set network.lan.ipaddr="192.168.168.1"
 uci set network.lan.netmask='255.255.255.0'
-uci set network.lan.dns='127.0.0.1'
+#uci set network.lan.dns='127.0.0.1'
 uci set network.lan.ifname="eth0"
 uci set network.wan.ifname="eth1"
 uci commit network
