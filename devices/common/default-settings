@@ -5,7 +5,7 @@ uci set luci.main.lang=zh_cn
 uci set luci.main.mediaurlbase=/luci-static/argon
 uci commit luci
 
-uci set system.@system[0].hostname=GodRos
+uci set system.@system[0].hostname=GodROS
 uci set system.@system[0].timezone=CST-8
 uci set system.@system[0].zonename=Asia/Shanghai
 uci commit system
