@@ -6,3 +6,17 @@
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +%Y%m%d)-Godros-Developer-/g' include/image.mk
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
+
+
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-dockerman  package/diy/luci-app-dockerman
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/docker package/diy/docker
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/dockerd package/diy/dockerd
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-lib-docker  package/diy/luci-lib-docker
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-compat package/diy/luci-compat
+
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-openclash package/diy/luci-app-openclash
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/ruby  package/diy/ruby 
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/ruby-yaml package/diy/ruby-yaml
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/r8168  package/diy/r8168
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-samba4 package/diy/luci-app-samba4
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/samba4 package/diy/samba4
