@@ -18,5 +18,3 @@ svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-ap
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/ruby  package/diy/ruby 
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/ruby-yaml package/diy/ruby-yaml
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/r8168  package/diy/r8168
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-samba4 package/diy/luci-app-samba4
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/samba4 package/diy/samba4
