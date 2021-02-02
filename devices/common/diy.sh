@@ -37,7 +37,7 @@ svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-ap
 git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
 svn export --force https://github.com/godros/openwrt-app/luci-app-jd-dailybonus/branches/luci19  package/diy/luci-app-jd-dailybonus  #京东签到
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-webrestriction package/diy/luci-app-control-webrestriction
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-timewol package/diy/luci-app-control-timewol
+#svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-timewol package/diy/luci-app-control-timewol
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-weburl package/diy/luci-app-control-weburl
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-timecontrol package/diy/luci-app-timecontrol
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-smartdns  package/diy/luci-app-smartdns
@@ -64,5 +64,5 @@ svn export --force https://github.com/godros/openwrt-app/branches/luci19/mwan3  
 
 # 内核显示增加自己个性名称
 date=`date +%d.%m.%Y`
-sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LEDE D%C From Lean De OpenWrt Source'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='GodRos D%C From Lean OpenWrt %V'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/# REVISION:=x/REVISION:= $date/g" include/version.mk
