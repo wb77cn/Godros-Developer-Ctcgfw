@@ -57,5 +57,5 @@ svn export --force https://github.com/godros/openwrt-app/branches/luci19/mwan3  
 
 # 内核显示增加自己个性名称
 date=`date +%d.%m.%Y`
-sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='GodROS D%C From Lean OpenWrt %V'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LedeOS D%C From Lean De OpenWrt Source'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/# REVISION:=x/REVISION:= $date/g" include/version.mk
