@@ -14,8 +14,8 @@
 rm -Rf package/lean/luci-app-wrtbwmon
 rm -Rf package/lean/luci-theme-argon
 rm -Rf package/lean/mwan3
-rm -Rf package/lean/luci-app-qbittorrent
-rm -Rf package/lean/qbittorrent
+#rm -Rf package/lean/luci-app-qbittorrent
+#rm -Rf package/lean/qbittorrent
 # 修改登陆地址
 sed -i 's/192.168.1.1/192.168.168.1/g' package/base-files/files/bin/config_generate
 # 关闭禁止解析IPv6 DNS 记录
