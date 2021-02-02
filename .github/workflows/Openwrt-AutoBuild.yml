@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name:LedeOS-Developer-From-Lean
+name: LedeOS-Developer-From-Lean
 
 on: 
   #push:
@@ -31,7 +31,6 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-
 
 env:
   REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
