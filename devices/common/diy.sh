@@ -15,6 +15,7 @@
 rm -Rf package/lean/luci-app-wrtbwmon
 rm -Rf package/lean/luci-theme-argon
 rm -Rf package/diy/OpenAppFilter
+rm -Rf package/lean/mwan3
 # 修改登陆地址
 sed -i 's/192.168.1.1/192.168.168.1/g' package/base-files/files/bin/config_generate
 # 关闭禁止解析IPv6 DNS 记录
@@ -53,6 +54,8 @@ git clone https://github.com/garypang13/luci-app-dnsfilter.git package/diy/luci-
 
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-uugamebooster  package/diy/luci-app-uugamebooster
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-ttnod  package/diy/luci-app-ttnode
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/mwan3  package/diymwan3
+
 
 #cd package
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
