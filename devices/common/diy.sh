@@ -50,9 +50,9 @@ svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-ap
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-ttnod  package/diy/luci-app-ttnode
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/mwan3  package/diy/mwan3
 
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-qbittorrent  package/diy/luci-app-qbittorrent
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/qBittorrent  package/diy/qBittorrent
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/qBittorrent-Enhanced-Edition package/diy/qBittorrent-Enhanced-Edition
+#svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-qbittorrent  package/diy/luci-app-qbittorrent
+#svn export --force https://github.com/godros/openwrt-app/branches/luci19/qBittorrent  package/diy/qBittorrent
+#svn export --force https://github.com/godros/openwrt-app/branches/luci19/qBittorrent-Enhanced-Edition package/diy/qBittorrent-Enhanced-Edition
 
 
 
@@ -64,5 +64,5 @@ svn export --force https://github.com/godros/openwrt-app/branches/luci19/qBittor
 
 # 内核显示增加自己个性名称
 date=`date +%d.%m.%Y`
-sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LedeOS D%C From Lean De OpenWrt Source'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LEDE D%C From Lean De OpenWrt Source'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/# REVISION:=x/REVISION:= $date/g" include/version.mk
