@@ -11,10 +11,8 @@
 # https://github.com/ledewrt
 #=================================================
 #添加固件版本描述。
-#rm -Rf package/diy/luci-app-adguardhome
 rm -Rf package/lean/luci-app-wrtbwmon
 rm -Rf package/lean/luci-theme-argon
-rm -Rf package/diy/OpenAppFilter
 rm -Rf package/lean/mwan3
 # 修改登陆地址
 sed -i 's/192.168.1.1/192.168.168.1/g' package/base-files/files/bin/config_generate
@@ -31,30 +29,24 @@ sed -i '/resolvfile=/d' package/diy/luci-app-adguardhome/root/etc/init.d/AdGuard
 sed -i 's/DEPENDS:=/DEPENDS:=+AdGuardHome /g' package/diy/luci-app-adguardhome/Makefile
 #argon主题
 svn export --force https://github.com/godros/openwrt-app/branches/luci18/luci-theme-argon package/diy/luci-theme-argon
-#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/diy/luci-theme-argon
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-eqos package/diy/luci-app-eqos
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-godproxy package/diy/luci-app-godproxy
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-serverchan package/diy/luci-app-serverchan
-git clone https://github.com/Lienol/openwrt-OpenAppFilter.git package/diy/OpenAppFilter
-#git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
-git clone https://github.com/fw876/helloworld.git package/diy/luci-app-ssr-plus
-#git clone https://github.com/docker/docker-ce.git package/diy/luci-app-docker-ce
+git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
 svn export --force https://github.com/godros/openwrt-app/luci-app-jd-dailybonus/branches/luci19  package/diy/luci-app-jd-dailybonus  #京东签到
-#git clone https://github.com/tohojo/sqm-scripts.git package/diy/sqm-scripts
-#git clone  https://github.com/siwind/luci-app-ttyd.git package/diy/luci-app-ttyd
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-webrestriction package/luci-app-control-webrestriction
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-timewol package/luci-app-control-timewol
-svn export --force https://github.com/godros/openwrt-app/branches/luci19//luci-app-control-weburl package/luci-app-control-weburl
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-timecontrol package/luci-app-timecontrol
-git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-smartdns
-git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
-git clone https://github.com/garypang13/luci-app-dnsfilter.git package/diy/luci-app-dnsfilter
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-webrestriction package/diy/luci-app-control-webrestriction
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-timewol package/diy/luci-app-control-timewol
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-weburl package/diy/luci-app-control-weburl
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-timecontrol package/diy/luci-app-timecontrol
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-smartdns  package/diy/luci-app-smartdns
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/smartdns package/diy/smartdns
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-dnsfilter.git package/diy/luci-app-dnsfilter
 #svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
 #svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
 
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-uugamebooster  package/diy/luci-app-uugamebooster
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-ttnod  package/diy/luci-app-ttnode
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/mwan3  package/diymwan3
+svn export --force https://github.com/godros/openwrt-app/branches/luci19/mwan3  package/diy/mwan3
 
 
 #cd package
