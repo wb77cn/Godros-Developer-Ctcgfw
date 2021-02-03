@@ -40,8 +40,8 @@ svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-ap
 #svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-timewol package/diy/luci-app-control-timewol
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-control-weburl package/diy/luci-app-control-weburl
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-timecontrol package/diy/luci-app-timecontrol
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-smartdns  package/diy/luci-app-smartdns
-svn export --force https://github.com/godros/openwrt-app/branches/luci19/smartdns package/diy/smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/diy/luci-app-smartdns
+git clone https://github.com/pymumu/openwrt-smartdns.git package/diy/smartdns
 svn export --force https://github.com/godros/openwrt-app/branches/luci19/luci-app-dnsfilter package/diy/luci-app-dnsfilter
 #svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
 #svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
